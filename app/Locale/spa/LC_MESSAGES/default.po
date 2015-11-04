@@ -1,0 +1,1383 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"PO-Revision-Date: 2015-10-07 20:56-0400\n"
+"Language-Team: EMAIL@ADDRESS\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"POT-Creation-Date: \n"
+"X-Generator: Poedit 1.8.5\n"
+"Last-Translator: \n"
+"Language: es\n"
+
+#: Controller/GroupsController.php:42
+msgid "You don't have the right to access to groups."
+msgstr "No tienes derecho a acceder a los grupos."
+
+#: Controller/GroupsController.php:63;101;134
+msgid "Invalid group"
+msgstr "Grupo no válido"
+
+#: Controller/GroupsController.php:79;105
+msgid "The group has been saved"
+msgstr "El grupo ha sido guardado."
+
+#: Controller/GroupsController.php:82;108
+msgid "The group could not be saved. Please, try again."
+msgstr ""
+"El usuario no pudo ser guardado. Por favor, intente de nuevo mas tarde."
+
+#: Controller/GroupsController.php:137
+msgid "Group deleted"
+msgstr "Grupo eliminado"
+
+#: Controller/GroupsController.php:140
+msgid "Group was not deleted"
+msgstr "Grupo de estudiantes eliminado"
+
+#: Controller/StudentsController.php:37
+msgid "You don't have the right to access to students."
+msgstr "No tienes derecho de acceso a los estudiantes."
+
+#: Controller/StudentsController.php:59;95;126
+msgid "Invalid student"
+msgstr "Estudiante no válido"
+
+#: Controller/StudentsController.php:75;99
+msgid "The student has been saved"
+msgstr "El estudiante se ha guardado"
+
+#: Controller/StudentsController.php:78;102
+msgid "The student could not be saved. Please, try again."
+msgstr ""
+"El usuario no pudo ser guardado. Por favor, intente de nuevo mas tarde."
+
+#: Controller/StudentsController.php:129
+msgid "Student deleted"
+msgstr "Estudiantes eliminados"
+
+#: Controller/StudentsController.php:132
+msgid "Student was not deleted"
+msgstr "Estudiantes eliminados"
+
+#: Controller/StudentsGroupsController.php:39
+msgid "You don't have the right to access to StudentsGroups."
+msgstr "No tienes derecho a acceder a StudentsGroups."
+
+#: Controller/StudentsGroupsController.php:52;88;120
+msgid "Invalid students group"
+msgstr "Grupo de estudiantes no válido"
+
+#: Controller/StudentsGroupsController.php:67;92
+msgid "The students group has been saved"
+msgstr "El grupo ha sido guardado."
+
+#: Controller/StudentsGroupsController.php:70;95
+msgid "The students group could not be saved. Please, try again."
+msgstr ""
+"El grupo de estudiantes no podría ser ahorrado. Por favor, inténtelo de "
+"nuevo."
+
+#: Controller/StudentsGroupsController.php:123
+msgid "Students group deleted"
+msgstr "Grupo de estudiantes eliminado"
+
+#: Controller/StudentsGroupsController.php:126
+msgid "Students group was not deleted"
+msgstr "Grupo de estudiantes eliminado"
+
+#: Controller/SubjectsController.php:34;37
+msgid "You don't have the right to add a subject."
+msgstr "No tienes derecho a añadir a un tema."
+
+#: Controller/SubjectsController.php:61;95;124
+msgid "Invalid subject"
+msgstr "Tema no válido"
+
+#: Controller/SubjectsController.php:77;99
+msgid "The subject has been saved"
+msgstr "El tema se ha guardado"
+
+#: Controller/SubjectsController.php:80;102
+msgid "The subject could not be saved. Please, try again."
+msgstr ""
+"El usuario no pudo ser guardado. Por favor, intente de nuevo mas tarde."
+
+#: Controller/SubjectsController.php:127
+msgid "Subject deleted"
+msgstr "Tema borrado"
+
+#: Controller/SubjectsController.php:130
+msgid "Subject was not deleted"
+msgstr "Tema borrado"
+
+#: Controller/TeachersController.php:40
+msgid "You don't have the right to access to teachers."
+msgstr "No tienes derecho de acceso a los maestros."
+
+#: Controller/TeachersController.php:62;98;129
+msgid "Invalid teacher"
+msgstr "Profesor no válido"
+
+#: Controller/TeachersController.php:78;102
+msgid "The teacher has been saved"
+msgstr "El profesor se ha guardado"
+
+#: Controller/TeachersController.php:81;105
+msgid "The teacher could not be saved. Please, try again."
+msgstr ""
+"El usuario no pudo ser guardado. Por favor, intente de nuevo mas tarde."
+
+#: Controller/TeachersController.php:132
+msgid "Teacher deleted"
+msgstr "Profesor eliminado"
+
+#: Controller/TeachersController.php:135
+msgid "Teacher was not deleted"
+msgstr "Maestro no se eliminó"
+
+#: Controller/TeachersGroupsController.php:40
+msgid "You don't have the right to access to TeacherGroups."
+msgstr "No tienes derecho a acceder a TeacherGroups."
+
+#: Controller/TeachersGroupsController.php:53;89;121
+msgid "Invalid teachers group"
+msgstr "Grupo de profesores no válido"
+
+#: Controller/TeachersGroupsController.php:68;93
+msgid "The teachers group has been saved"
+msgstr "El grupo ha sido guardado."
+
+#: Controller/TeachersGroupsController.php:71;96
+msgid "The teachers group could not be saved. Please, try again."
+msgstr ""
+"El grupo de maestros no podría ser ahorrado. Por favor, inténtelo de nuevo."
+
+#: Controller/TeachersGroupsController.php:124
+msgid "Teachers group deleted"
+msgstr "Grupo de profesores eliminado"
+
+#: Controller/TeachersGroupsController.php:127
+msgid "Teachers group was not deleted"
+msgstr "Grupo de profesores no fue eliminado"
+
+#: Controller/UsersController.php:35
+msgid "Invalid username or password, try again"
+msgstr ""
+"Incorrecto nombre de usuario o contraseña. Por favor, inténtelo de nuevo."
+
+#: Controller/UsersController.php:52
+msgid "The passwords do not match."
+msgstr "Las contraseñas no concuerdan."
+
+#: Controller/UsersController.php:70
+msgid "You don't have the right to access the users."
+msgstr "No tienes derecho de acceso de los usuarios."
+
+#: Controller/UsersController.php:84;118;147
+msgid "Invalid user"
+msgstr "Usuario no válido."
+
+#: Controller/UsersController.php:99;122
+msgid "The user has been saved"
+msgstr "El usuario ha sido guardado"
+
+#: Controller/UsersController.php:103;125
+msgid "The user could not be saved. Please, try again."
+msgstr ""
+"El usuario no pudo ser guardado. Por favor, intente de nuevo mas tarde."
+
+#: Controller/UsersController.php:150
+msgid "User deleted"
+msgstr "Usuario eliminado"
+
+#: Controller/UsersController.php:153
+msgid "User was not deleted"
+msgstr "Usuario eliminado"
+
+#: Plugin/i18n/Controller/TranslationsController.php:146
+msgid "The translation has been saved"
+msgstr "El estudiante se ha guardado"
+
+#: Plugin/i18n/Controller/TranslationsController.php:167;190
+msgid "Translation saved"
+msgstr "El usuario ha sido guardado"
+
+#: Plugin/i18n/Controller/TranslationsController.php:210
+msgid "Translation deleted"
+msgstr "Usuario no fue eliminado"
+
+#: Plugin/i18n/Model/Translation.php:112
+msgid "Could not save the translation, please check your inputs."
+msgstr "Podría no guardar la traducción, por favor revise las entradas."
+
+#: Plugin/i18n/Model/Translation.php:134;171;215;237
+msgid "Invalid Translation"
+msgstr "Traducción no válida"
+
+#: Plugin/i18n/Model/Translation.php:255
+msgid "You need to confirm to delete this Translation"
+msgstr "Usted necesita confirmar para borrar esta traducción"
+
+#: Plugin/i18n/View/Translations/admin_add.ctp:4
+msgid "Admin Add Translation"
+msgstr "Añadir Grupo de estudiantes"
+
+#: Plugin/i18n/View/Translations/admin_add.ctp:17
+#: Plugin/i18n/View/Translations/admin_edit.ctp:19
+#: Plugin/i18n/View/Translations/admin_edit_multi.ctp:26
+#: Plugin/i18n/View/Translations/admin_view.ctp:40
+msgid "List Translations"
+msgstr "Lista de grupos de estudiantes"
+
+#: Plugin/i18n/View/Translations/admin_delete.ctp:1
+msgid "Delete Translation \"%s\"?"
+msgstr "¿Eliminar traducción \"%s\"?"
+
+#: Plugin/i18n/View/Translations/admin_delete.ctp:3
+msgid ""
+"Be aware that your Translation and all associated data will be deleted if "
+"you confirm!"
+msgstr ""
+"Ten en cuenta que su traducción y sus datos asociados se eliminará si "
+"confirmas!"
+
+#: Plugin/i18n/View/Translations/admin_delete.ctp:11
+msgid "Confirm"
+msgstr "Confirmar"
+
+#: Plugin/i18n/View/Translations/admin_delete.ctp:13
+msgid "You have to confirm."
+msgstr "Tienes que confirmar."
+
+#: Plugin/i18n/View/Translations/admin_delete.ctp:14
+msgid "Continue"
+msgstr "Continuar"
+
+#: Plugin/i18n/View/Translations/admin_edit.ctp:4
+#: Plugin/i18n/View/Translations/admin_edit_multi.ctp:4
+msgid "Admin Edit Translation"
+msgstr "admin Edit traducción"
+
+#: Plugin/i18n/View/Translations/admin_edit.ctp:18
+#: Plugin/i18n/View/Translations/admin_index.ctp:70 View/Groups/edit.ctp:12
+#: View/Groups/index.ctp:76 View/Groups/view.ctp:123;165
+#: View/Students/edit.ctp:13 View/Students/index.ctp:78
+#: View/Students/view.ctp:113 View/StudentsGroups/edit.ctp:9
+#: View/StudentsGroups/index.ctp:49 View/Subjects/edit.ctp:12
+#: View/Subjects/index.ctp:66 View/Subjects/view.ctp:105
+#: View/Teachers/edit.ctp:12 View/Teachers/index.ctp:75
+#: View/Teachers/view.ctp:105 View/TeachersGroups/edit.ctp:9
+#: View/TeachersGroups/index.ctp:49 View/Users/edit.ctp:12
+#: View/Users/index.ctp:78
+msgid "Delete"
+msgstr "Borrar"
+
+#: Plugin/i18n/View/Translations/admin_edit_multi.ctp:22
+msgid "Submit"
+msgstr "Enviar"
+
+#: Plugin/i18n/View/Translations/admin_index.ctp:2
+msgid "Translations"
+msgstr "Traducciones"
+
+#: Plugin/i18n/View/Translations/admin_index.ctp:6 View/Groups/index.ctp:87
+#: View/Students/index.ctp:89 View/StudentsGroups/index.ctp:60
+#: View/Subjects/index.ctp:77 View/Teachers/index.ctp:86
+#: View/TeachersGroups/index.ctp:60 View/Users/index.ctp:89
+msgid ""
+"Page {:page} of {:pages}, showing {:current} records out of {:count} total, "
+"starting on record {:start}, ending on {:end}"
+msgstr ""
+"Página {:page} de {:pages}, mostrando {:current} registros de {:count} en "
+"total, empezando desde {:start} y terminando en {:end}"
+
+#: Plugin/i18n/View/Translations/admin_index.ctp:17
+msgid "Locale Name"
+msgstr "Segundo nombre"
+
+#: Plugin/i18n/View/Translations/admin_index.ctp:20
+msgid "Model Name"
+msgstr "Nombre del modelo"
+
+#: Plugin/i18n/View/Translations/admin_index.ctp:23
+#: Plugin/i18n/View/Translations/admin_view.ctp:24
+msgid "Field"
+msgstr "Campo"
+
+#: Plugin/i18n/View/Translations/admin_index.ctp:26
+#: Plugin/i18n/View/Translations/admin_view.ctp:29
+msgid "Content"
+msgstr "Contenido"
+
+#: Plugin/i18n/View/Translations/admin_index.ctp:28
+msgid "Search"
+msgstr "Encontrar Descuentos!"
+
+#: Plugin/i18n/View/Translations/admin_index.ctp:40 View/Groups/index.ctp:58
+#: View/Groups/view.ctp:108;152 View/Students/index.ctp:57
+#: View/Students/view.ctp:96 View/StudentsGroups/index.ctp:33
+#: View/Subjects/index.ctp:54 View/Subjects/view.ctp:88
+#: View/Teachers/index.ctp:56 View/Teachers/view.ctp:88
+#: View/TeachersGroups/index.ctp:33 View/Users/index.ctp:64
+msgid "Actions"
+msgstr "Acciones"
+
+#: Plugin/i18n/View/Translations/admin_index.ctp:67 View/Groups/index.ctp:74
+#: View/Groups/view.ctp:121;163 View/Students/index.ctp:76
+#: View/Students/view.ctp:111 View/StudentsGroups/index.ctp:47
+#: View/Subjects/index.ctp:64 View/Subjects/view.ctp:103
+#: View/Teachers/index.ctp:73 View/Teachers/view.ctp:103
+#: View/TeachersGroups/index.ctp:47 View/Users/index.ctp:76
+msgid "View"
+msgstr "Vista"
+
+#: Plugin/i18n/View/Translations/admin_index.ctp:68 View/Groups/index.ctp:75
+#: View/Groups/view.ctp:122;164 View/Students/index.ctp:77
+#: View/Students/view.ctp:112 View/StudentsGroups/index.ctp:48
+#: View/Subjects/index.ctp:65 View/Subjects/view.ctp:104
+#: View/Teachers/index.ctp:74 View/Teachers/view.ctp:104
+#: View/TeachersGroups/index.ctp:48 View/Users/index.ctp:77
+msgid "Edit"
+msgstr "Editar"
+
+#: Plugin/i18n/View/Translations/admin_index.ctp:69
+msgid "Edit All locales for this entry"
+msgstr ""
+
+#: Plugin/i18n/View/Translations/admin_index.ctp:80
+#: Plugin/i18n/View/Translations/admin_view.ctp:41
+msgid "New Translation"
+msgstr ""
+
+#: Plugin/i18n/View/Translations/admin_view.ctp:2
+msgid "Translation"
+msgstr ""
+
+#: Plugin/i18n/View/Translations/admin_view.ctp:4
+#: View/StudentsGroups/view.ctp:33 View/TeachersGroups/view.ctp:33
+msgid "Id"
+msgstr "Id"
+
+#: Plugin/i18n/View/Translations/admin_view.ctp:9
+msgid "Locale"
+msgstr "Local"
+
+#: Plugin/i18n/View/Translations/admin_view.ctp:14
+msgid "Model"
+msgstr "Modelo"
+
+#: Plugin/i18n/View/Translations/admin_view.ctp:19
+msgid "Foreign Key"
+msgstr "Clave externa"
+
+#: Plugin/i18n/View/Translations/admin_view.ctp:38
+msgid "Edit Translation"
+msgstr "Editar Grupo"
+
+#: Plugin/i18n/View/Translations/admin_view.ctp:39
+msgid "Delete Translation"
+msgstr "Eliminar grupo"
+
+#: View/Groups/add.ctp:9 View/Groups/edit.ctp:10 View/Groups/index.ctp:10;45
+#: View/Groups/view.ctp:9 View/Students/add.ctp:16 View/Students/edit.ctp:19
+#: View/Students/index.ctp:17 View/Students/view.ctp:18
+#: View/Subjects/add.ctp:30 View/Subjects/edit.ctp:33
+#: View/Subjects/index.ctp:30 View/Subjects/view.ctp:33
+#: View/Teachers/add.ctp:23 View/Teachers/edit.ctp:25
+#: View/Teachers/index.ctp:23 View/Teachers/view.ctp:25 View/Users/add.ctp:23
+#: View/Users/edit.ctp:25 View/Users/index.ctp:24 View/Users/view.ctp:25
+msgid "Groups"
+msgstr "Grupos"
+
+#: View/Groups/add.ctp:11 View/Groups/edit.ctp:13 View/Groups/view.ctp:12
+#: View/Students/add.ctp:18 View/Students/edit.ctp:21
+#: View/Students/index.ctp:19 View/Students/view.ctp:20
+#: View/StudentsGroups/add.ctp:12 View/StudentsGroups/edit.ctp:13
+#: View/StudentsGroups/index.ctp:12 View/StudentsGroups/view.ctp:15
+#: View/Subjects/add.ctp:32 View/Subjects/edit.ctp:35
+#: View/Subjects/index.ctp:32 View/Subjects/view.ctp:35
+#: View/Teachers/add.ctp:25 View/Teachers/edit.ctp:27
+#: View/Teachers/index.ctp:25 View/Teachers/view.ctp:27
+#: View/TeachersGroups/add.ctp:12 View/TeachersGroups/edit.ctp:13
+#: View/TeachersGroups/index.ctp:12 View/TeachersGroups/view.ctp:15
+#: View/Users/add.ctp:25 View/Users/edit.ctp:27 View/Users/index.ctp:26
+#: View/Users/view.ctp:27
+msgid "List Groups"
+msgstr "Lista de grupos"
+
+#: View/Groups/add.ctp:15 View/Groups/edit.ctp:18 View/Groups/index.ctp:23
+#: View/Groups/view.ctp:17 View/Students/add.ctp:10 View/Students/edit.ctp:11
+#: View/Students/index.ctp:11;46 View/Students/view.ctp:10
+#: View/Subjects/add.ctp:23 View/Subjects/edit.ctp:25
+#: View/Subjects/index.ctp:23 View/Subjects/view.ctp:25
+#: View/Teachers/add.ctp:16 View/Teachers/edit.ctp:18
+#: View/Teachers/index.ctp:16 View/Teachers/view.ctp:18 View/Users/add.ctp:16
+#: View/Users/edit.ctp:18 View/Users/index.ctp:17 View/Users/view.ctp:18
+msgid "Students"
+msgstr "Estudiantes"
+
+#: View/Groups/add.ctp:17 View/Groups/edit.ctp:20 View/Groups/index.ctp:25
+#: View/Groups/view.ctp:19 View/Students/add.ctp:12 View/Students/edit.ctp:14
+#: View/Students/view.ctp:13 View/StudentsGroups/add.ctp:10
+#: View/StudentsGroups/edit.ctp:11 View/StudentsGroups/index.ctp:10
+#: View/StudentsGroups/view.ctp:13 View/Subjects/add.ctp:25
+#: View/Subjects/edit.ctp:28 View/Subjects/index.ctp:25
+#: View/Subjects/view.ctp:28 View/Teachers/add.ctp:18 View/Teachers/edit.ctp:20
+#: View/Teachers/index.ctp:18 View/Teachers/view.ctp:20 View/Users/add.ctp:18
+#: View/Users/edit.ctp:20 View/Users/index.ctp:19 View/Users/view.ctp:20
+msgid "List Students"
+msgstr "Estudiantes de lista"
+
+#: View/Groups/add.ctp:18 View/Groups/edit.ctp:21 View/Groups/index.ctp:26
+#: View/Groups/view.ctp:20;135 View/Students/edit.ctp:15
+#: View/Students/view.ctp:14 View/StudentsGroups/add.ctp:11
+#: View/StudentsGroups/edit.ctp:12 View/StudentsGroups/index.ctp:11
+#: View/StudentsGroups/view.ctp:14 View/Subjects/add.ctp:26
+#: View/Subjects/edit.ctp:29 View/Subjects/index.ctp:26
+#: View/Subjects/view.ctp:29 View/Teachers/add.ctp:19 View/Teachers/edit.ctp:21
+#: View/Teachers/index.ctp:19 View/Teachers/view.ctp:21 View/Users/add.ctp:19
+#: View/Users/edit.ctp:21 View/Users/index.ctp:20 View/Users/view.ctp:21
+msgid "New Student"
+msgstr "Nuevos estudiantes"
+
+#: View/Groups/add.ctp:23 View/Groups/edit.ctp:26 View/Groups/index.ctp:16
+#: View/Groups/view.ctp:24 View/Students/add.ctp:23 View/Students/edit.ctp:26
+#: View/Students/index.ctp:24 View/Students/view.ctp:25
+#: View/Subjects/add.ctp:10 View/Subjects/edit.ctp:10
+#: View/Subjects/index.ctp:10;46 View/Subjects/view.ctp:10
+#: View/Teachers/add.ctp:30 View/Teachers/edit.ctp:32
+#: View/Teachers/index.ctp:30 View/Teachers/view.ctp:32 View/Users/add.ctp:30
+#: View/Users/edit.ctp:32 View/Users/index.ctp:31 View/Users/view.ctp:32
+msgid "Subjects"
+msgstr "Temas"
+
+#: View/Groups/add.ctp:25 View/Groups/edit.ctp:28 View/Groups/index.ctp:18
+#: View/Groups/view.ctp:26 View/Students/add.ctp:25 View/Students/edit.ctp:28
+#: View/Students/index.ctp:26 View/Students/view.ctp:27
+#: View/Subjects/add.ctp:12 View/Subjects/edit.ctp:13 View/Subjects/view.ctp:13
+#: View/Teachers/add.ctp:32 View/Teachers/edit.ctp:34
+#: View/Teachers/index.ctp:32 View/Teachers/view.ctp:34 View/Users/add.ctp:32
+#: View/Users/edit.ctp:34 View/Users/index.ctp:33 View/Users/view.ctp:34
+msgid "List Subjects"
+msgstr "Temas de lista"
+
+#: View/Groups/add.ctp:26 View/Groups/edit.ctp:29 View/Groups/index.ctp:19
+#: View/Groups/view.ctp:27 View/Students/add.ctp:26 View/Students/edit.ctp:29
+#: View/Students/index.ctp:27 View/Students/view.ctp:28
+#: View/Subjects/edit.ctp:14 View/Subjects/index.ctp:12
+#: View/Subjects/view.ctp:14 View/Teachers/add.ctp:33 View/Teachers/edit.ctp:35
+#: View/Teachers/index.ctp:33 View/Teachers/view.ctp:35 View/Users/add.ctp:33
+#: View/Users/edit.ctp:35 View/Users/index.ctp:34 View/Users/view.ctp:35
+msgid "New Subject"
+msgstr "Nombre para tema nuevo"
+
+#: View/Groups/add.ctp:30 View/Groups/edit.ctp:33 View/Groups/index.ctp:30
+#: View/Groups/view.ctp:31 View/Students/add.ctp:30 View/Students/edit.ctp:33
+#: View/Students/index.ctp:31 View/Students/view.ctp:32
+#: View/Subjects/add.ctp:16 View/Subjects/edit.ctp:18
+#: View/Subjects/index.ctp:16 View/Subjects/view.ctp:18
+#: View/Teachers/add.ctp:10 View/Teachers/edit.ctp:10
+#: View/Teachers/index.ctp:10;47 View/Teachers/view.ctp:10
+#: View/Users/add.ctp:37 View/Users/edit.ctp:39 View/Users/index.ctp:38
+#: View/Users/view.ctp:39
+msgid "Teachers"
+msgstr "Docentes"
+
+#: View/Groups/add.ctp:32 View/Groups/edit.ctp:35 View/Groups/index.ctp:32
+#: View/Groups/view.ctp:33 View/Students/add.ctp:32 View/Students/edit.ctp:35
+#: View/Students/index.ctp:33 View/Students/view.ctp:34
+#: View/Subjects/add.ctp:18 View/Subjects/edit.ctp:20
+#: View/Subjects/index.ctp:18 View/Subjects/view.ctp:20
+#: View/Teachers/add.ctp:12 View/Teachers/edit.ctp:13 View/Teachers/view.ctp:13
+#: View/TeachersGroups/add.ctp:10 View/TeachersGroups/edit.ctp:11
+#: View/TeachersGroups/index.ctp:10 View/TeachersGroups/view.ctp:13
+#: View/Users/add.ctp:39 View/Users/edit.ctp:41 View/Users/index.ctp:40
+#: View/Users/view.ctp:41
+msgid "List Teachers"
+msgstr "Profesores de lista"
+
+#: View/Groups/add.ctp:33 View/Groups/edit.ctp:36 View/Groups/index.ctp:33
+#: View/Groups/view.ctp:34;177 View/Students/add.ctp:33
+#: View/Students/edit.ctp:36 View/Students/index.ctp:34
+#: View/Students/view.ctp:35 View/Subjects/add.ctp:19 View/Subjects/edit.ctp:21
+#: View/Subjects/index.ctp:19 View/Subjects/view.ctp:21
+#: View/Teachers/edit.ctp:14 View/Teachers/index.ctp:12
+#: View/Teachers/view.ctp:14 View/TeachersGroups/add.ctp:11
+#: View/TeachersGroups/edit.ctp:12 View/TeachersGroups/index.ctp:11
+#: View/TeachersGroups/view.ctp:14 View/Users/add.ctp:40 View/Users/edit.ctp:42
+#: View/Users/index.ctp:41 View/Users/view.ctp:42
+msgid "New Teacher"
+msgstr "Nuevo Docente"
+
+#: View/Groups/add.ctp:44
+msgid "Add Group"
+msgstr "Añadir Grupo"
+
+#: View/Groups/edit.ctp:12 View/Groups/index.ctp:76
+#: View/Groups/view.ctp:123;165 View/Students/edit.ctp:13
+#: View/Students/index.ctp:78 View/Students/view.ctp:113
+#: View/StudentsGroups/edit.ctp:9 View/StudentsGroups/index.ctp:49
+#: View/StudentsGroups/view.ctp:10 View/Subjects/edit.ctp:12
+#: View/Subjects/index.ctp:66 View/Subjects/view.ctp:105
+#: View/Teachers/edit.ctp:12 View/Teachers/index.ctp:75
+#: View/Teachers/view.ctp:105 View/TeachersGroups/edit.ctp:9
+#: View/TeachersGroups/index.ctp:49 View/TeachersGroups/view.ctp:10
+#: View/Users/edit.ctp:12 View/Users/index.ctp:78
+msgid "Are you sure you want to delete # %s?"
+msgstr "Está seguro de que desea eliminar?"
+
+#: View/Groups/edit.ctp:14 View/Groups/index.ctp:12 View/Groups/view.ctp:13
+#: View/Students/edit.ctp:22 View/Students/index.ctp:20
+#: View/Students/view.ctp:21;125 View/StudentsGroups/add.ctp:13
+#: View/StudentsGroups/edit.ctp:14 View/StudentsGroups/index.ctp:13
+#: View/StudentsGroups/view.ctp:16 View/Subjects/add.ctp:33
+#: View/Subjects/edit.ctp:36 View/Subjects/index.ctp:33
+#: View/Subjects/view.ctp:36;117 View/Teachers/add.ctp:26
+#: View/Teachers/edit.ctp:28 View/Teachers/index.ctp:26
+#: View/Teachers/view.ctp:28;117 View/TeachersGroups/add.ctp:13
+#: View/TeachersGroups/edit.ctp:14 View/TeachersGroups/index.ctp:13
+#: View/TeachersGroups/view.ctp:16 View/Users/add.ctp:26 View/Users/edit.ctp:28
+#: View/Users/index.ctp:27 View/Users/view.ctp:28
+msgid "New Group"
+msgstr "Nuevo Grupo"
+
+#: View/Groups/edit.ctp:47 View/Groups/view.ctp:11
+msgid "Edit Group"
+msgstr "Editar Grupo"
+
+#: View/Groups/index.ctp:94 View/Students/index.ctp:96
+#: View/StudentsGroups/index.ctp:67 View/Subjects/index.ctp:84
+#: View/Teachers/index.ctp:93 View/TeachersGroups/index.ctp:67
+#: View/Users/index.ctp:96
+msgid "Previous"
+msgstr "Anterior"
+
+#: View/Groups/index.ctp:96 View/Students/index.ctp:98
+#: View/StudentsGroups/index.ctp:69 View/Subjects/index.ctp:86
+#: View/Teachers/index.ctp:95 View/TeachersGroups/index.ctp:69
+#: View/Users/index.ctp:98
+msgid "Next"
+msgstr "Siguiente"
+
+#: View/Groups/view.ctp:47 View/StudentsGroups/view.ctp:43
+#: View/TeachersGroups/view.ctp:43
+msgid "Group"
+msgstr "Grupo"
+
+#: View/Groups/view.ctp:52 View/Students/index.ctp:56 View/Students/view.ctp:90
+#: View/Subjects/view.ctp:82 View/Teachers/view.ctp:82
+msgid "Groupe"
+msgstr "Denominación del grupo"
+
+#: View/Groups/view.ctp:57 View/Students/view.ctp:91 View/Subjects/view.ctp:83
+#: View/Teachers/view.ctp:83
+msgid "Local Num"
+msgstr "Local Num"
+
+#: View/Groups/view.ctp:62 View/Students/view.ctp:92 View/Subjects/view.ctp:84
+#: View/Teachers/view.ctp:84 Plugin/DebugKit/View/Elements/session_panel.ctp:19
+msgid "Session"
+msgstr "Sesi&oacute;n"
+
+#: View/Groups/view.ctp:67 View/Students/view.ctp:93 View/Subjects/view.ctp:85
+#: View/Teachers/view.ctp:85
+msgid "Maximum"
+msgstr "Máximo"
+
+#: View/Groups/view.ctp:72 View/Subjects/view.ctp:49
+msgid "Subject"
+msgstr "Asunto"
+
+#: View/Groups/view.ctp:77 View/Students/view.ctp:94 View/Subjects/view.ctp:86
+#: View/Teachers/view.ctp:86 View/Users/view.ctp:76
+msgid "Created"
+msgstr "Creado"
+
+#: View/Groups/view.ctp:82 View/Students/view.ctp:95 View/Subjects/view.ctp:87
+#: View/Teachers/view.ctp:87 View/Users/view.ctp:81
+msgid "Modified"
+msgstr "Modificado"
+
+#: View/Groups/view.ctp:96
+msgid "Related Students"
+msgstr "Relacionados con los estudiantes"
+
+#: View/Groups/view.ctp:104;150 View/Students/view.ctp:53
+#: View/Teachers/view.ctp:54
+msgid "Name"
+msgstr "Nombre"
+
+#: View/Groups/view.ctp:105 View/Students/view.ctp:58
+msgid "Middle Name"
+msgstr "Segundo nombre"
+
+#: View/Groups/view.ctp:106;151 View/Students/view.ctp:63
+#: View/Teachers/view.ctp:59
+msgid "Last Name"
+msgstr "Apellidos"
+
+#: View/Groups/view.ctp:107 View/Students/view.ctp:68
+msgid "Other Details"
+msgstr "Otros detalles"
+
+#: View/Groups/view.ctp:142
+msgid "Related Teachers"
+msgstr "Maestros relacionados con"
+
+#: View/Students/add.ctp:19
+msgid "New Groups"
+msgstr "Grupos nuevos"
+
+#: View/Students/add.ctp:44
+msgid "Add Student"
+msgstr "Añadir estudiante"
+
+#: View/Students/edit.ctp:49 View/Students/view.ctp:12
+msgid "Edit Student"
+msgstr "Editar Estudiante"
+
+#: View/Students/index.ctp:13
+msgid "New Students"
+msgstr "Nuevo grupo de estudiantes"
+
+#: View/Students/view.ctp:48 View/StudentsGroups/view.ctp:38
+msgid "Student"
+msgstr "Estudiante"
+
+#: View/Students/view.ctp:82 View/Subjects/view.ctp:73
+#: View/Teachers/view.ctp:74
+msgid "Related Groups"
+msgstr "Grupos relacionados de"
+
+#: View/StudentsGroups/add.ctp:9 View/StudentsGroups/edit.ctp:10
+#: View/StudentsGroups/view.ctp:11
+msgid "List Students Groups"
+msgstr "Lista de grupos de estudiantes"
+
+#: View/StudentsGroups/add.ctp:22
+msgid "Add Students Group"
+msgstr "Añadir Grupo de estudiantes"
+
+#: View/StudentsGroups/edit.ctp:23 View/StudentsGroups/view.ctp:9
+msgid "Edit Students Group"
+msgstr "Editar grupo de estudiantes"
+
+#: View/StudentsGroups/index.ctp:9 View/StudentsGroups/view.ctp:12
+msgid "New Students Group"
+msgstr "Nuevo grupo de estudiantes"
+
+#: View/StudentsGroups/index.ctp:24
+msgid "Students Groups"
+msgstr "Grupos de estudiantes"
+
+#: View/StudentsGroups/view.ctp:10
+msgid "Delete Students Group"
+msgstr "Grupo de estudiantes de la cancelación"
+
+#: View/StudentsGroups/view.ctp:28
+msgid "Students Group"
+msgstr "Grupo de estudiantes"
+
+#: View/Subjects/add.ctp:44
+msgid "Add Subject"
+msgstr "Añadir tema"
+
+#: View/Subjects/edit.ctp:47 View/Subjects/view.ctp:12
+msgid "Edit Subject"
+msgstr "Editar asunto"
+
+#: View/Subjects/view.ctp:54
+msgid "Number"
+msgstr "Número"
+
+#: View/Subjects/view.ctp:59
+msgid "Title"
+msgstr "﻿Título"
+
+#: View/Teachers/add.ctp:45
+msgid "Add Teacher"
+msgstr "+ Agregar al Profesor"
+
+#: View/Teachers/edit.ctp:47 View/Teachers/view.ctp:12
+msgid "Edit Teacher"
+msgstr "Editar Docente"
+
+#: View/Teachers/view.ctp:49 View/TeachersGroups/view.ctp:38
+msgid "Teacher"
+msgstr "Profesor"
+
+#: View/TeachersGroups/add.ctp:9 View/TeachersGroups/edit.ctp:10
+#: View/TeachersGroups/view.ctp:11
+msgid "List Teachers Groups"
+msgstr "Lista de grupos de profesores"
+
+#: View/TeachersGroups/add.ctp:22
+msgid "Add Teachers Group"
+msgstr "Agregar grupo de profesores"
+
+#: View/TeachersGroups/edit.ctp:23 View/TeachersGroups/view.ctp:9
+msgid "Edit Teachers Group"
+msgstr "Editar grupo de profesores"
+
+#: View/TeachersGroups/index.ctp:9 View/TeachersGroups/view.ctp:12
+msgid "New Teachers Group"
+msgstr "Nuevo grupo de maestros"
+
+#: View/TeachersGroups/index.ctp:24
+msgid "Teachers Groups"
+msgstr "Grupos de profesores"
+
+#: View/TeachersGroups/view.ctp:10
+msgid "Delete Teachers Group"
+msgstr "Grupo de profesores de la cancelación"
+
+#: View/TeachersGroups/view.ctp:28
+msgid "Teachers Group"
+msgstr "Grupo de profesores"
+
+#: View/Themed/Cakestrap/Elements/menu/top_menu.ctp:9
+msgid "Home"
+msgstr "Inicio"
+
+#: View/Users/add.ctp:10 View/Users/edit.ctp:10 View/Users/index.ctp:10;53
+#: View/Users/view.ctp:10
+msgid "Users"
+msgstr "Usuarios"
+
+#: View/Users/add.ctp:12 View/Users/edit.ctp:13 View/Users/view.ctp:13
+msgid "List Users"
+msgstr "Lista de Usuarios"
+
+#: View/Users/add.ctp:51
+msgid "Add User"
+msgstr "Añadir Usuario"
+
+#: View/Users/edit.ctp:14 View/Users/index.ctp:13 View/Users/view.ctp:14
+msgid "New User"
+msgstr "Nuevo Usuario"
+
+#: View/Users/edit.ctp:53 View/Users/view.ctp:12
+msgid "Edit User"
+msgstr "Editar Usuario"
+
+#: View/Users/index.ctp:12
+msgid "List User"
+msgstr "Lista de grupos"
+
+#: View/Users/login.ctp:6
+msgid "Please enter your username and password"
+msgstr "Por favor, introduzca su nombre de usuario y contraseña."
+
+#: View/Users/login.ctp:12
+msgid "Login"
+msgstr "Acceder"
+
+#: View/Users/register.ctp:5
+msgid "Register"
+msgstr "Registrarme"
+
+#: View/Users/view.ctp:56
+msgid "User"
+msgstr "Usuario"
+
+#: View/Users/view.ctp:61
+msgid "Username"
+msgstr "Nombre de usuario"
+
+#: View/Users/view.ctp:66
+msgid "Role"
+msgstr "Cargo o función"
+
+#: View/Users/view.ctp:71
+msgid "Email"
+msgstr "Correo Electrónico"
+
+#: Model/Group.php:validation for field groupe;validation local_num;validation
+#: maximum;validation subject_id Model/StudentsGroup.php:validation
+#: student_id;validation group_id Model/TeachersGroup.php:validation
+#: teacher_id;validation
+msgid "numeric"
+msgstr ""
+
+#: Model/Group.php:validation for field session Model/Student.php:validation
+#: name;validation last_name;validation other_details
+#: Model/Subject.php:validation number;validation title
+#: Model/Teacher.php:validation last_name
+msgid "notBlank"
+msgstr ""
+
+#: Model/User.php:validation for field username
+msgid "A username is required"
+msgstr "Se requiere nombre de usuario."
+
+#: Model/User.php:validation for field username
+msgid "This username is already taken."
+msgstr "El nombre de usuario ya existe"
+
+#: Model/User.php:validation for field password
+msgid "A password is required"
+msgstr "La contraseña es obligatoria"
+
+#: Model/User.php:validation for field role
+msgid "Please enter a valid role"
+msgstr "Por favor, introduzca una URL válida"
+
+#: Model/User.php:validation for field email
+msgid "email"
+msgstr "Correo electrónico"
+
+#: Plugin/i18n/Model/Translation.php:validation for field locale
+msgid "Please enter a Locale"
+msgstr ""
+
+#: Plugin/i18n/Model/Translation.php:validation for field model
+msgid "Please enter a Model"
+msgstr ""
+
+#: Plugin/i18n/Model/Translation.php:validation for field foreign_key
+msgid "Please enter a Foreign Key"
+msgstr ""
+
+#: Plugin/i18n/Model/Translation.php:validation for field
+msgid "Please enter a Field"
+msgstr ""
+
+#: Plugin/DebugKit/Console/Command/BenchmarkShell.php:38
+msgid "-> Testing :url"
+msgstr ""
+
+#: Plugin/DebugKit/Console/Command/BenchmarkShell.php:64
+msgid "Total Requests made: :requests"
+msgstr ""
+
+#: Plugin/DebugKit/Console/Command/BenchmarkShell.php:65
+msgid "Total Time elapsed: :duration (seconds)"
+msgstr ""
+
+#: Plugin/DebugKit/Console/Command/BenchmarkShell.php:69
+msgid "Requests/Second: :rps req/sec"
+msgstr ""
+
+#: Plugin/DebugKit/Console/Command/BenchmarkShell.php:73
+msgid "Average request time: :average-time seconds"
+msgstr ""
+
+#: Plugin/DebugKit/Console/Command/BenchmarkShell.php:77
+msgid "Standard deviation of average request time: :std-dev"
+msgstr ""
+
+#: Plugin/DebugKit/Console/Command/BenchmarkShell.php:81
+msgid "Longest/shortest request: :longest sec/:shortest sec"
+msgstr ""
+
+#: Plugin/DebugKit/Console/Command/BenchmarkShell.php:134
+msgid ""
+"Allows you to obtain some rough benchmarking statisticsabout a fully "
+"qualified URL."
+msgstr ""
+
+#: Plugin/DebugKit/Console/Command/BenchmarkShell.php:139
+msgid "The URL to request."
+msgstr ""
+
+#: Plugin/DebugKit/Console/Command/BenchmarkShell.php:144
+msgid "Number of iterations to perform."
+msgstr ""
+
+#: Plugin/DebugKit/Console/Command/BenchmarkShell.php:148
+msgid ""
+"Maximum total time for all iterations, in seconds.If a single iteration "
+"takes more than the timeout, only one request will be made"
+msgstr ""
+
+#: Plugin/DebugKit/Console/Command/BenchmarkShell.php:152
+msgid ""
+"Example Use: `cake benchmark --n 10 --t 100 http://localhost/testsite`. "
+"<info>Note:</info> this benchmark does not include browser render times."
+msgstr ""
+
+#: Plugin/DebugKit/Controller/Component/ToolbarComponent.php:159
+msgid "Component initialization"
+msgstr ""
+
+#: Plugin/DebugKit/Controller/Component/ToolbarComponent.php:281
+msgid "Controller action"
+msgstr ""
+
+#: Plugin/DebugKit/Controller/Component/ToolbarComponent.php:284
+msgid "Controller action start"
+msgstr ""
+
+#: Plugin/DebugKit/Controller/Component/ToolbarComponent.php:304
+msgid "Processing toolbar state"
+msgstr ""
+
+#: Plugin/DebugKit/Controller/Component/ToolbarComponent.php:327
+msgid "Processing toolbar data"
+msgstr ""
+
+#: Plugin/DebugKit/Controller/Component/ToolbarComponent.php:362
+msgid "Controller render start"
+msgstr ""
+
+#: Plugin/DebugKit/Controller/Component/ToolbarComponent.php:446
+msgid "Could not load DebugToolbar panel %s"
+msgstr ""
+
+#: Plugin/DebugKit/Lib/DebugTimer.php:127
+msgid "Core Processing (Derived from $_SERVER[\"REQUEST_TIME\"])"
+msgstr ""
+
+#: Plugin/DebugKit/Lib/FireCake.php:309
+msgid "Headers already sent in %s on line %s. Cannot send log data to FirePHP."
+msgstr ""
+
+#: Plugin/DebugKit/Lib/FireCake.php:330
+msgid "Incorrect parameter count for FireCake::fb()"
+msgstr ""
+
+#: Plugin/DebugKit/Lib/FireCake.php:409
+msgid "Maximum number (99,999) of messages reached!"
+msgstr ""
+
+#: Plugin/DebugKit/View/Elements/debug_toolbar.ctp:23
+msgid "There are no active panels. You must enable a panel to see its output."
+msgstr ""
+
+#: Plugin/DebugKit/View/Elements/environment_panel.ctp:20
+msgid "App Constants"
+msgstr ""
+
+#: Plugin/DebugKit/View/Elements/environment_panel.ctp:36
+msgid "CakePHP Constants"
+msgstr ""
+
+#: Plugin/DebugKit/View/Elements/environment_panel.ctp:52
+msgid "PHP Environment"
+msgstr ""
+
+#: Plugin/DebugKit/View/Elements/environment_panel.ctp:70
+msgid "Hidef Environment"
+msgstr ""
+
+#: Plugin/DebugKit/View/Elements/history_panel.ctp:19
+msgid "Request History"
+msgstr ""
+
+#: Plugin/DebugKit/View/Elements/history_panel.ctp:21
+msgid "No previous requests logged."
+msgstr ""
+
+#: Plugin/DebugKit/View/Elements/history_panel.ctp:23
+msgid "previous requests available"
+msgstr ""
+
+#: Plugin/DebugKit/View/Elements/history_panel.ctp:25
+msgid "Restore to current request"
+msgstr ""
+
+#: Plugin/DebugKit/View/Elements/include_panel.ctp:19
+msgid "Included Files"
+msgstr ""
+
+#: Plugin/DebugKit/View/Elements/log_panel.ctp:19
+msgid "Logs"
+msgstr ""
+
+#: Plugin/DebugKit/View/Elements/log_panel.ctp:27
+msgid "Time"
+msgstr ""
+
+#: Plugin/DebugKit/View/Elements/log_panel.ctp:27
+#: Plugin/DebugKit/View/Elements/timer_panel.ctp:42;66
+msgid "Message"
+msgstr ""
+
+#: Plugin/DebugKit/View/Elements/log_panel.ctp:38
+msgid "There were no log entries made this request"
+msgstr ""
+
+#: Plugin/DebugKit/View/Elements/request_panel.ctp:19
+msgid "Request"
+msgstr ""
+
+#: Plugin/DebugKit/View/Elements/request_panel.ctp:27
+msgid "No post data."
+msgstr ""
+
+#: Plugin/DebugKit/View/Elements/request_panel.ctp:36
+msgid "No querystring data."
+msgstr ""
+
+#: Plugin/DebugKit/View/Elements/request_panel.ctp:49
+msgid "Current Route"
+msgstr ""
+
+#: Plugin/DebugKit/View/Elements/sql_log_panel.ctp:24
+msgid "Sql Logs"
+msgstr ""
+
+#: Plugin/DebugKit/View/Elements/sql_log_panel.ctp:39
+msgid "No query logs when debug < 2."
+msgstr ""
+
+#: Plugin/DebugKit/View/Elements/sql_log_panel.ctp:41
+msgid "No query logs."
+msgstr ""
+
+#: Plugin/DebugKit/View/Elements/sql_log_panel.ctp:58
+msgid "Total Time: %s ms <br />Total Queries: %s queries"
+msgstr ""
+
+#: Plugin/DebugKit/View/Elements/sql_log_panel.ctp:67
+msgid "%s duplicate queries run."
+msgstr ""
+
+#: Plugin/DebugKit/View/Elements/sql_log_panel.ctp:70
+msgid "Query Explain:"
+msgstr ""
+
+#: Plugin/DebugKit/View/Elements/sql_log_panel.ctp:73
+msgid "Click an \"Explain\" link above, to see the query explanation."
+msgstr ""
+
+#: Plugin/DebugKit/View/Elements/sql_log_panel.ctp:79
+msgid "No active database connections"
+msgstr ""
+
+#: Plugin/DebugKit/View/Elements/timer_panel.ctp:35
+msgid "Memory"
+msgstr ""
+
+#: Plugin/DebugKit/View/Elements/timer_panel.ctp:38
+msgid "Peak Memory Use"
+msgstr ""
+
+#: Plugin/DebugKit/View/Elements/timer_panel.ctp:42
+msgid "Memory use"
+msgstr ""
+
+#: Plugin/DebugKit/View/Elements/timer_panel.ctp:55
+msgid "Timers"
+msgstr ""
+
+#: Plugin/DebugKit/View/Elements/timer_panel.ctp:57
+msgid "%s (ms)"
+msgstr ""
+
+#: Plugin/DebugKit/View/Elements/timer_panel.ctp:58
+msgid "Total Request Time:"
+msgstr ""
+
+#: Plugin/DebugKit/View/Elements/timer_panel.ctp:67
+msgid "Time in ms"
+msgstr ""
+
+#: Plugin/DebugKit/View/Elements/timer_panel.ctp:68
+msgid "Graph"
+msgstr ""
+
+#: Plugin/DebugKit/View/Elements/variables_panel.ctp:19
+msgid "View Variables"
+msgstr ""
+
+#: Plugin/DebugKit/View/Helper/DebugTimerHelper.php:44
+msgid "Rendering View"
+msgstr ""
+
+#: Plugin/DebugKit/View/Helper/DebugTimerHelper.php:60
+msgid "Rendering %s"
+msgstr ""
+
+#: Plugin/DebugKit/View/Helper/DebugTimerHelper.php:88
+msgid "View render complete"
+msgstr ""
+
+#: Plugin/DebugKit/View/Helper/HtmlToolbarHelper.php:231
+msgid "Explain"
+msgstr ""
+
+#: Plugin/DebugKit/View/Helper/SimpleGraphHelper.php:80
+msgid "Starting %sms into the request, taking %sms"
+msgstr ""
+
+#: Plugin/DebugKit/View/Helper/TidyHelper.php:99
+msgid "No markup errors found"
+msgstr ""
+
+#: Plugin/DebugKit/View/Helper/ToolbarHelper.php:190
+msgid "maybe slow"
+msgstr ""
+
+#: Plugin/DebugKit/Console/Command/WhitespaceShell.php:90
+msgid "Absolute path or relative to APP."
+msgstr ""
+
+#: View/Errors/error400.ctp:19 View/Errors/error500.ctp:19
+msgid "Error"
+msgstr ""
+
+#: View/Errors/error400.ctp:21
+msgid "The requested address %s was not found on this server."
+msgstr ""
+
+#: View/Errors/error500.ctp:20
+msgid "An Internal Error Has Occurred."
+msgstr ""
+
+#: View/Layouts/default.ctp:17 View/Layouts/error.ctp:17
+#: View/Themed/Cakestrap/Layouts/default.ctp:19
+msgid "CakePHP: the rapid development php framework"
+msgstr ""
+
+#: View/Layouts/default.ctp:18
+msgid "CakePHP %s"
+msgstr ""
+
+#: View/Pages/home.ctp:14
+msgid "Release Notes for CakePHP %s."
+msgstr ""
+
+#: View/Pages/home.ctp:16
+msgid "Read the changelog"
+msgstr ""
+
+#: View/Pages/home.ctp:25
+msgid "URL rewriting is not properly configured on your server."
+msgstr ""
+
+#: View/Pages/home.ctp:34
+msgid "Your version of PHP is 5.2.8 or higher."
+msgstr ""
+
+#: View/Pages/home.ctp:38
+msgid ""
+"Your version of PHP is too low. You need PHP 5.2.8 or higher to use CakePHP."
+msgstr ""
+
+#: View/Pages/home.ctp:47
+msgid "Your tmp directory is writable."
+msgstr ""
+
+#: View/Pages/home.ctp:51
+msgid "Your tmp directory is NOT writable."
+msgstr ""
+
+#: View/Pages/home.ctp:61
+msgid "The %s is being used for core caching. To change the config edit %s"
+msgstr ""
+
+#: View/Pages/home.ctp:65
+msgid "Your cache is NOT working. Please check the settings in %s"
+msgstr ""
+
+#: View/Pages/home.ctp:75
+msgid "Your database configuration file is present."
+msgstr ""
+
+#: View/Pages/home.ctp:80
+msgid "Your database configuration file is NOT present."
+msgstr ""
+
+#: View/Pages/home.ctp:82
+msgid "Rename %s to %s"
+msgstr ""
+
+#: View/Pages/home.ctp:107
+msgid "CakePHP is able to connect to the database."
+msgstr ""
+
+#: View/Pages/home.ctp:111
+msgid "CakePHP is NOT able to connect to the database."
+msgstr ""
+
+#: View/Pages/home.ctp:124
+msgid "PCRE has not been compiled with Unicode support."
+msgstr ""
+
+#: View/Pages/home.ctp:126
+msgid ""
+"Recompile PCRE with Unicode support by adding <code>--enable-unicode-"
+"properties</code> when configuring"
+msgstr ""
+
+#: View/Pages/home.ctp:135
+msgid "DebugKit plugin is present"
+msgstr ""
+
+#: View/Pages/home.ctp:139
+msgid ""
+"DebugKit is not installed. It will help you inspect and debug different "
+"aspects of your application."
+msgstr ""
+
+#: View/Pages/home.ctp:141
+msgid "You can install it from %s"
+msgstr ""
+
+#: View/Pages/home.ctp:147
+msgid "Editing this Page"
+msgstr ""
+
+#: View/Pages/home.ctp:150
+msgid ""
+"To change the content of this page, edit: %s.<br />\n"
+"To change its layout, edit: %s.<br />\n"
+"You can also add some CSS styles for your pages at: %s."
+msgstr ""
+
+#: View/Pages/home.ctp:157
+msgid "Getting Started"
+msgstr ""
+
+#: View/Pages/home.ctp:161
+msgid "New"
+msgstr ""
+
+#: View/Pages/home.ctp:161
+msgid "CakePHP 2.0 Docs"
+msgstr ""
+
+#: View/Pages/home.ctp:170
+msgid "The 15 min Blog Tutorial"
+msgstr ""
+
+#: View/Pages/home.ctp:177
+msgid "Official Plugins"
+msgstr ""
+
+#: View/Pages/home.ctp:182
+msgid ""
+"provides a debugging toolbar and enhanced debugging tools for CakePHP "
+"applications."
+msgstr ""
+
+#: View/Pages/home.ctp:186
+msgid ""
+"contains various localized validation classes and translations for specific "
+"countries"
+msgstr ""
+
+#: View/Pages/home.ctp:191
+msgid "More about CakePHP"
+msgstr ""
+
+#: View/Pages/home.ctp:193
+msgid ""
+"CakePHP is a rapid development framework for PHP which uses commonly known "
+"design patterns like Active Record, Association Data Mapping, Front "
+"Controller and MVC."
+msgstr ""
+
+#: View/Pages/home.ctp:196
+msgid ""
+"Our primary goal is to provide a structured framework that enables PHP users "
+"at all levels to rapidly develop robust web applications, without any loss "
+"to flexibility."
+msgstr ""
+
+#: View/Pages/home.ctp:201
+msgid "The Rapid Development Framework"
+msgstr ""
+
+#: View/Pages/home.ctp:202
+msgid "CakePHP Documentation"
+msgstr ""
+
+#: View/Pages/home.ctp:203
+msgid "Your Rapid Development Cookbook"
+msgstr ""
+
+#: View/Pages/home.ctp:204
+msgid "CakePHP API"
+msgstr ""
+
+#: View/Pages/home.ctp:205
+msgid "Quick API Reference"
+msgstr ""
+
+#: View/Pages/home.ctp:206
+msgid "The Bakery"
+msgstr ""
+
+#: View/Pages/home.ctp:207
+msgid "Everything CakePHP"
+msgstr ""
+
+#: View/Pages/home.ctp:208
+msgid "CakePHP Plugins"
+msgstr ""
+
+#: View/Pages/home.ctp:209
+msgid "A comprehensive list of all CakePHP plugins created by the community"
+msgstr ""
+
+#: View/Pages/home.ctp:210
+msgid "CakePHP Community Center"
+msgstr ""
+
+#: View/Pages/home.ctp:211
+msgid "Everything related to the CakePHP community in one place"
+msgstr ""
+
+#: View/Pages/home.ctp:212
+msgid "CakePHP Google Group"
+msgstr ""
+
+#: View/Pages/home.ctp:213
+msgid "Community mailing list"
+msgstr ""
+
+#: View/Pages/home.ctp:215
+msgid "Live chat about CakePHP"
+msgstr ""
+
+#: View/Pages/home.ctp:216
+msgid "CakePHP Code"
+msgstr ""
+
+#: View/Pages/home.ctp:217
+msgid "Find the CakePHP code on GitHub and contribute to the framework"
+msgstr ""
+
+#: View/Pages/home.ctp:218;219
+msgid "CakePHP Issues"
+msgstr ""
+
+#: View/Pages/home.ctp:220;221
+msgid "CakePHP Roadmaps"
+msgstr ""
+
+#: View/Pages/home.ctp:222
+msgid "Training"
+msgstr ""
+
+#: View/Pages/home.ctp:223
+msgid "Join a live session and get skilled with the framework"
+msgstr ""
+
+#: View/Pages/home.ctp:224
+msgid "CakeFest"
+msgstr ""
+
+#: View/Pages/home.ctp:225
+msgid "Don't miss our annual CakePHP conference"
+msgstr ""
+
+#: View/Pages/home.ctp:226
+msgid "Cake Software Foundation"
+msgstr ""
+
+#: View/Pages/home.ctp:227
+msgid "Promoting development related to CakePHP"
+msgstr ""
+
+#: webroot/test.php:103
+msgid "Debug setting does not allow access to this url."
+msgstr ""
