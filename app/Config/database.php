@@ -97,16 +97,12 @@ class DATABASE_CONFIG {
 	           $this->default['login']      = getenv("OPENSHIFT_MYSQL_DB_USERNAME");
 	           $this->default['password']   = getenv("OPENSHIFT_MYSQL_DB_PASSWORD");
 	           $this->default['database']   = getenv("OPENSHIFT_APP_NAME");
-	           $this->default['datasource'] = 'Database/Mysql';
-	           $this->test['datasource']    = 'Database/Mysql';
 	       else:
 	           $this->default['host']       = getenv("OPENSHIFT_POSTGRESQL_DB_HOST");
 	           $this->default['port']       = getenv("OPENSHIFT_POSTGRESQL_DB_PORT");
 	           $this->default['login']      = getenv("OPENSHIFT_POSTGRESQL_DB_USERNAME");
 	           $this->default['password']   = getenv("OPENSHIFT_POSTGRESQL_DB_PASSWORD");
 	           $this->default['database']   = getenv("OPENSHIFT_APP_NAME");
-	           $this->default['datasource'] = 'Database/test_database_name';
-	           $this->test['datasource']    = 'Database/test_database_name';
 	       endif;
 	}
 }
