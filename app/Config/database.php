@@ -96,7 +96,7 @@ class DATABASE_CONFIG {
 	           $this->default['port']       = getenv("OPENSHIFT_MYSQL_DB_PORT");
 	           $this->default['login']      = getenv("OPENSHIFT_MYSQL_DB_USERNAME");
 	           $this->default['password']   = getenv("OPENSHIFT_MYSQL_DB_PASSWORD");
-	           $this->default['database']   = getenv("OPENSHIFT_APP_NAME");
+	           $this->default['database']   = getenv('school_management');
 
 	       else:
 	           $this->default['host']       = getenv('localhost');
