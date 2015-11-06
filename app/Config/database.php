@@ -97,6 +97,7 @@ class DATABASE_CONFIG {
 	           $this->default['login']      = getenv("OPENSHIFT_MYSQL_DB_USERNAME");
 	           $this->default['password']   = getenv("OPENSHIFT_MYSQL_DB_PASSWORD");
 	           $this->default['database']   = getenv("OPENSHIFT_APP_NAME");
+<<<<<<< HEAD
 
 	       else:
 	           $this->default['host']       = getenv('localhost');
@@ -104,6 +105,14 @@ class DATABASE_CONFIG {
 	           $this->default['login']      = getenv('root');
 	           $this->default['password']   = getenv('mysql');
 	           $this->default['database']   = getenv('school_management');
+=======
+	       else:
+	           $this->default['host']       = getenv("OPENSHIFT_POSTGRESQL_DB_HOST");
+	           $this->default['port']       = getenv("OPENSHIFT_POSTGRESQL_DB_PORT");
+	           $this->default['login']      = getenv("OPENSHIFT_POSTGRESQL_DB_USERNAME");
+	           $this->default['password']   = getenv("OPENSHIFT_POSTGRESQL_DB_PASSWORD");
+	           $this->default['database']   = getenv("OPENSHIFT_APP_NAME");
+>>>>>>> origin/master
 	       endif;
 	}
 }
