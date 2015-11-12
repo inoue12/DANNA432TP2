@@ -5,3 +5,5 @@ Le password est mysql.
 Le admin sapelle charles et le mdp est charles
 Le teacher est teacher et le mdp est teacher
 Le student est students et le mdp est student
+
+Il faut changer les configariton pour etre en local
