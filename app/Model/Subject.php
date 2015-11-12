@@ -57,6 +57,17 @@ class Subject extends AppModel {
 			'counterQuery' => ''
 		)
 	);
+	
+		public $belongsTo = array(
+		'Program' => array(
+			'className' => 'Program',
+			'foreignKey' => 'program_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		)
+	);
+
 	public function isOwnedBy($post, $user) {
     return $this->field('id', array('id' => $post, 'user_id' => $user)) !== false;
 }

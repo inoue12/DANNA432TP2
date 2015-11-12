@@ -23,12 +23,14 @@ class UsersController extends AppController {
 	public function beforeFilter() {
 		parent::beforeFilter();
 		// Allow users to register and logout.
-		$this->Auth->allow('login','logout','register');
+		$this->Auth->allow('login','logout','register', 'activate');
 		$this->Auth->deny('view', 'add', 'delete', 'edit', 'index');
 	}
 
 	public function login() {
 		if ($this->request->is('post')) {
+			$user = $this->User->find('first', array(
+                'conditions' => array('User.username' => $this->request->data['User']['username']) ));
 			if ($this->Auth->login()) {
 				return $this->redirect($this->Auth->redirectUrl());
 			}
@@ -40,12 +42,56 @@ class UsersController extends AppController {
 		return $this->redirect($this->Auth->logout());
 	}
 	
-	public function register() {
+	/**public function register() {
+		if ($this->request->is('post')) {
+			if ($this->data['User']['password'] == $this->data['User']['password_confirm']) {
+				$this->request->data['User']['role'] = 'guest';
+				$this->User->create();
+				if ($this->User->save($this->request->data)) {
+					 App::uses('CakeEmail', 'Network/Email');
+                $user = $this->User->read(null, $this->User->id);
+                $link = array('controller' => 'users', 'action' => 'activate',
+                        $this->User->id . '-' . md5($user['User']['password']));
+                $mail = new CakeEmail('gmail');
+                $mail->from("test.cour.php@gmail.com");
+                $mail->to($this->request->data['User']['email']);
+                $mail->subject(__('Please confirm your email !'));
+                $mail->emailFormat('html');
+                $mail->template('signup');
+                $mail->viewVars(array(
+                    'username' => $this->request->data['User']['username'],
+                    'link' => $link
+                ));
+                $mail->send();
+				 $this->redirect(array('action' => 'login'));
+				}
+			} else {
+				  $this->Flash->error(__('The passwords do not match.'));
+			}
+		}
+	}**/
+	
+		public function register() {
 		if ($this->request->is('post')) {
 			if ($this->data['User']['password'] == $this->data['User']['password_confirm']) {
 				$this->request->data['User']['role'] = 'student';
 				$this->User->create();
 				if ($this->User->save($this->request->data)) {
+					 App::uses('CakeEmail', 'Network/Email');
+                $user = $this->User->read(null, $this->User->id);
+                $link = array('controller' => 'users', 'action' => 'activate',
+                        $this->User->id . '-' . md5($user['User']['password']));
+                $mail = new CakeEmail('gmail');
+                $mail->from("test.cour.php@gmail.com");
+                $mail->to($this->request->data['User']['email']);
+                $mail->subject(__('Please confirm your email !'));
+                $mail->emailFormat('html');
+                $mail->template('signup');
+                $mail->viewVars(array(
+                    'username' => $this->request->data['User']['username'],
+                    'link' => $link
+                ));
+                $mail->send();
 				 $this->redirect(array('action' => 'login'));
 				}
 			} else {
@@ -53,6 +99,7 @@ class UsersController extends AppController {
 			}
 		}
 	}
+	
 	
 	public function index() {
 		$this->User->recursive = 0;
@@ -71,6 +118,20 @@ class UsersController extends AppController {
 			}
 		return parent::isAuthorized($user);
 	}
+	
+	public function sendmail($recipient = null, $username = null, $id = null, $redirect = true) {
+        $link = array('controller' => 'users', 'action' => 'activate', $id);
+        App::uses('CakeEmail', 'Network/Email');
+        $mail = new CakeEmail('gmail');
+        $mail->from('test.cour.php@gmail.com')->to($recipient)->subject('Mail Confirm');
+        $mail->emailFormat('html');
+        $mail->template('signup');
+        $mail->viewVars(array('username' => $this->request->data['User']['username'],'link' => $link ));
+        $mail->send();
+        if ($redirect) {
+            $this->redirect('/');
+        }
+    }
 
 /**
  * view method
@@ -153,4 +214,70 @@ class UsersController extends AppController {
 		$this->Session->setFlash(__('User was not deleted'), 'flash/error');
 		$this->redirect(array('action' => 'index'));
 	}
+	
+	/**public function activate($token) {
+        if (empty($token)) {
+            $this->redirect(array('action' => 'login'));
+        }
+        $token = explode('-', $token);
+        $user = $this->User->find('first', array(
+            'conditions' => array('id' => $token[0], 'MD5(User.password)' => $token[1], 'active' => false)
+        ));
+        if (!empty($user)) {
+            $this->User->id = $user['User']['id'];
+            $this->User->saveField('active', 1);
+			$this->request->data['User']['role'] = 'student';
+            $this->Session->setFlash(__('Your account as been activated'), 'flash/success');
+        } else {
+            $this->Session->setFlash(__('The activation link is not valid or this user is already activated'), 'flash/success');
+        }
+		if ($this->Session->check('Auth.User')) {
+		$this->redirect($this->Auth->logout());
+		 $this->redirect(array('action' => 'login'));
+		 }else{
+        $this->redirect(array('action' => 'login'));
+		}
+    }**/
+	
+		public function activate($token) {
+        if (empty($token)) {
+            $this->redirect(array('action' => 'login'));
+        }
+        $token = explode('-', $token);
+        $user = $this->User->find('first', array(
+            'conditions' => array('id' => $token[0], 'MD5(User.password)' => $token[1], 'active' => false)
+        ));
+        if (!empty($user)) {
+            $this->User->id = $user['User']['id'];
+            $this->User->saveField('active', 1);
+			$this->request->data['User']['role'] = 'student';
+            $this->Session->setFlash(__('Your account as been activated'), 'flash/success');
+        } else {
+            $this->Session->setFlash(__('The activation link is not valid or this user is already activated'), 'flash/success');
+        }
+        if ($this->Session->check('Auth.User')) {
+		$this->redirect($this->Auth->logout());
+		 $this->redirect(array('action' => 'login'));
+		 }else{
+        $this->redirect(array('action' => 'login'));
+		}
+    }
+	
+		/**public function activate($token) {
+        if (empty($token)) {
+            $this->redirect(array('action' => 'login'));
+        }
+        $token = explode('-', $token);
+        $user = $this->User->find('first', array(
+            'conditions' => array('id' => $token[0], 'MD5(User.password)' => $token[1], 'active' => false)
+        ));
+        if (!empty($user)) {
+            $this->User->id = $user['User']['id'];
+            $this->User->saveField('active', 1);
+            $this->Session->setFlash(__('Your account as been activated'), 'flash/success');
+        } else {
+            $this->Session->setFlash(__('The activation link is not valid or this user is already activated'), 'flash/success');
+        }
+        $this->redirect(array('action' => 'login'));
+    }**/
 }

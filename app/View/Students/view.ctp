@@ -35,6 +35,7 @@
 					<li class="list-group-item"><?php echo $this->Html->link(__('New Teacher'), array('controller' => 'teachers', 'action' => 'add')); ?> </li>
 				</ul>
 			</div>		
+			
 			</ul><!-- /.list-group -->
 			
 		</div><!-- /.actions -->
@@ -70,7 +71,12 @@
 			<?php echo h($student['Student']['other_details']); ?>
 			&nbsp;
 		</td>
-</tr>					</tbody>
+</tr><tr>		<td><strong><?php echo __('Picture'); ?></strong></td>
+		<td>
+			<?php if ($student['Student']['thumb']) echo $this->Html->image($student['Student']['thumb'], array('escape' => false, 'height' => '300px'));?>
+			&nbsp;
+		</td>
+</tr>						</tbody>
 				</table><!-- /.table table-striped table-bordered -->
 			</div><!-- /.table-responsive -->
 			

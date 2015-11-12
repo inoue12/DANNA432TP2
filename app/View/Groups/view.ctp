@@ -34,6 +34,13 @@
 					<li class="list-group-item"><?php echo $this->Html->link(__('New Teacher'), array('controller' => 'teachers', 'action' => 'add')); ?> </li>
 				</ul>
 			</div>		
+			<div class="dropdown">
+				<a href="#" class="list-group-item" data-toggle="dropdown"><?php echo __('Program')?> <b class="caret"></b></a>
+				<ul class="dropdown-menu">	
+					<li class="list-group-item"><?php echo $this->Html->link(__('List Program'), array('controller' => 'programs', 'action' => 'index')); ?> </li>
+					<li class="list-group-item"><?php echo $this->Html->link(__('New Program'), array('controller' => 'programs', 'action' => 'add')); ?> </li>
+				</ul>
+			</div>	
 			</ul><!-- /.list-group -->
 			
 		</div><!-- /.actions -->
@@ -67,6 +74,11 @@
 </tr><tr>		<td><strong><?php echo __('Maximum'); ?></strong></td>
 		<td>
 			<?php echo h($group['Group']['maximum']); ?>
+			&nbsp;
+		</td>
+</tr><tr>		<td><strong><?php echo __('Program'); ?></strong></td>
+		<td>
+			<?php echo $this->Html->link($group['Subject']['program_id'], array('controller' => 'programs', 'action' => 'view', $group['Subject']['program_id']), array('class' => '')); ?>
 			&nbsp;
 		</td>
 </tr><tr>		<td><strong><?php echo __('Subject'); ?></strong></td>

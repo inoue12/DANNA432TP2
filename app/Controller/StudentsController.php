@@ -13,7 +13,7 @@ class StudentsController extends AppController {
  *
  * @var array
  */
-	public $components = array('Paginator');
+	public $components = array('RequestHandler','Paginator');
 
 /**
  * index method
@@ -26,18 +26,18 @@ class StudentsController extends AppController {
 		$this->set('students', $this->paginate());
 	}
 	public function isAuthorized($user) {
-    if (isset($user['role']) && ($user['role'] === 'student')){
+    if (isset($user['role']) && ($user['role'] === 'student') && ($user['active'] == 1)){
 			if (in_array($this->action, array('add'))) {
 				return true;
 			} 
 	}
-			if(isset($user['role']) && ($user['role'] === 'student')){
+			if(isset($user['role']) && ($user['role'] === 'student')  && ($user['active'] == 1)){
 			} else if(isset($user['role']) && ($user['role'] === 'admin')){
 			} else {
 				$this->Session->setFlash(__('You don\'t have the right to access to students.'), 'flash/error');
 			}
     // The owner of a post can edit and delete it
- if (in_array($this->action, array('edit', 'delete'))) {
+		if (in_array($this->action, array('edit', 'delete'))) {
         $postId = (int) $this->request->params['pass'][0];
         if ($this->Student->isOwnedBy($postId, $user['id'])) {
             return true;
@@ -131,5 +131,11 @@ class StudentsController extends AppController {
 		}
 		$this->Session->setFlash(__('Student was not deleted'), 'flash/error');
 		$this->redirect(array('action' => 'index'));
+	}
+	
+	public function simulation(){
+        $detailNames = $this->Student->getDetailNames('F');
+        $this->set(compact('detailNames'));
+        $this->set('_serialize', 'detailNames');
 	}
 }

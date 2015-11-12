@@ -35,7 +35,14 @@
 					<li class="list-group-item"><?php echo $this->Html->link(__('List Teachers'), array('controller' => 'teachers', 'action' => 'index')); ?> </li>
 					<li class="list-group-item"><?php echo $this->Html->link(__('New Teacher'), array('controller' => 'teachers', 'action' => 'add')); ?> </li>
 				</ul>
-			</div>		
+			</div>	
+							<div class="dropdown">
+				<a href="#" class="list-group-item" data-toggle="dropdown"><?php echo __('Program')?> <b class="caret"></b></a>
+				<ul class="dropdown-menu">	
+					<li class="list-group-item"><?php echo $this->Html->link(__('List Program'), array('controller' => 'programs', 'action' => 'index')); ?> </li>
+					<li class="list-group-item"><?php echo $this->Html->link(__('New Program'), array('controller' => 'programs', 'action' => 'add')); ?> </li>
+				</ul>
+			</div>				
 			</ul><!-- /.list-group -->
 		
 		</div><!-- /.actions -->
@@ -68,6 +75,9 @@
 						<?php echo $this->Form->input('maximum', array('class' => 'form-control')); ?>
 					</div><!-- .form-group -->
 					<div class="form-group">
+						<?php echo $this->Form->input('program_id', array('class' => 'form-control')); ?>
+					</div><!-- .form-group -->
+					<div class="form-group">
 						<?php echo $this->Form->input('subject_id', array('class' => 'form-control')); ?>
 					</div><!-- .form-group -->
 					<div class="form-group">
@@ -85,3 +95,20 @@
 	</div><!-- /#page-content .col-sm-9 -->
 
 </div><!-- /#page-container .row-fluid -->
+<?php
+	$this->Js->get('#GroupProgramId')->event('change', 
+		$this->Js->request(array(
+			'controller'=>'subjects',
+			'action'=>'getByProgram'
+		), array(
+			'update'=>'#GroupSubjectId',
+			'async' => true,
+			'method' => 'post',
+			'dataExpression'=>true,
+			'data'=> $this->Js->serializeForm(array(
+			'isForm' => true,
+			'inline' => true
+		))
+	))
+);
+?>

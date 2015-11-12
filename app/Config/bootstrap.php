@@ -104,7 +104,8 @@ Configure::write('Dispatcher.filters', array(
 
 App::uses('CakeLog', 'Log');
 CakePlugin::load('I18n');
- CakePlugin::load('DebugKit');
+CakePlugin::load('DebugKit');
+CakePlugin::load('Upload');
 
 CakeLog::config('debug', array(
 	'engine' => 'File',

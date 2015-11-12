@@ -10,6 +10,10 @@
                                             'controller' => 'subjects',
                                             'action' => 'index'),
                                             array('class' => 'navbar-brand')); ?>
+		<?php echo $this->Html->Link(__("About"), array(
+                                            'controller' => 'pages',
+                                            'action' => 'about'),
+                                            array('class' => 'navbar-brand')); ?>									
 	</div><!-- /.navbar-header -->
 	<div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav">
@@ -43,6 +47,7 @@
 				
                 ?>
             </li> 
+			
 			<li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Languages <b class="caret"></b></a>
                 <ul class="dropdown-menu">
@@ -53,6 +58,17 @@
                 ?>
                 </ul>
             </li>
+			
+			  <?php if ($this->Session->check('Auth.User')) {
+			 if (!$this->Session->read('Auth.User.active')) {
+				echo 'Votre compte n\'est pas activé'
+				?>
+				<li><?php echo $this->Html->link(__('Resend mail'), array('controller' => 'users', 'action' => 'send_mail', $this->Session->read('Auth.User.email'), $this->Session->read('Auth.User.username'), $this->Session->read('Auth.User.id'))) ?></li>
+				<?php
+			 }
+				}
+                ?>
+
 		</ul>
 	</div>
 </nav><!-- /.navbar navbar-default -->

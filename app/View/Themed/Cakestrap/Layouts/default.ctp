@@ -31,9 +31,10 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 			
 			echo $this->fetch('meta');
 
+			echo $this->Html->css('https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css');
 			echo $this->Html->css('bootstrap');
 			echo $this->Html->css('main');
-
+			
 			echo $this->fetch('css');
 			
 			echo $this->Html->script('libs/jquery-1.10.2.min');
@@ -62,6 +63,15 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 			
 		</div><!-- /#main-container -->
 		
+		<?php echo $this->element('sql_dump'); ?>
+		<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script> -->
+			<!-- scripts_for_layout -->
+		<?php echo $scripts_for_layout; ?>
+			<!-- Js writeBuffer -->
+		<?php
+			if (class_exists('JsHelper') && method_exists($this->Js, 'writeBuffer')) echo $this->Js->writeBuffer();
+			// Writes cached scripts
+		?>	
 	</body>
 
 </html>

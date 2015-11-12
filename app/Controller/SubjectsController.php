@@ -20,6 +20,10 @@ class SubjectsController extends AppController {
  *
  * @return void
  */
+
+	public function beforeFilter() {
+        $this->Auth->allow('getByProgram', 'index');
+    }
 	public function index() {
 		$this->Subject->recursive = 0;
 		$this->set('subjects', $this->paginate());
@@ -56,6 +60,7 @@ class SubjectsController extends AppController {
  * @param string $id
  * @return void
  */
+ 
 	public function view($id = null) {
 		if (!$this->Subject->exists($id)) {
 			throw new NotFoundException(__('Invalid subject'));
@@ -80,6 +85,8 @@ class SubjectsController extends AppController {
 				$this->Session->setFlash(__('The subject could not be saved. Please, try again.'), 'flash/error');
 			}
 		}
+		$programs = $this->Subject->Program->find('list');
+		$this->set(compact('programs'));
 	}
 
 /**
@@ -130,4 +137,19 @@ class SubjectsController extends AppController {
 		$this->Session->setFlash(__('Subject was not deleted'), 'flash/error');
 		$this->redirect(array('action' => 'index'));
 	}
+		
+		
+	public function getByProgram() {
+		$program_id = $this->request->data['Group']['program_id'];
+ 
+		$subjects = $this->Subject->find('list', array(
+		'conditions' => array('Subject.program_id' => $program_id),
+		'recursive' => -1
+	));
+ 
+	$this->set('subjects',$subjects);
+	$this->layout = 'ajax';
+	}
+	
+
 }

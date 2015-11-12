@@ -26,12 +26,20 @@
 						<li class="list-group-item"><?php echo $this->Html->link(__('New Student'), array('controller' => 'students', 'action' => 'add'), array('class' => '')); ?></li> 
 					</ul>
 				</div>
+							<div class="dropdown">
+				<a href="#" class="list-group-item" data-toggle="dropdown"><?php echo __('Program')?> <b class="caret"></b></a>
+				<ul class="dropdown-menu">	
+					<li class="list-group-item"><?php echo $this->Html->link(__('List Program'), array('controller' => 'programs', 'action' => 'index')); ?> </li>
+					<li class="list-group-item"><?php echo $this->Html->link(__('New Program'), array('controller' => 'programs', 'action' => 'add')); ?> </li>
+				</ul>
+			</div>	
 				<div class="dropdown">
 					<a href="#" class="list-group-item" data-toggle="dropdown"><?php echo __('Teachers') ?> <b class="caret"></b></a>
 					<ul class="dropdown-menu">
 						<li class="list-group-item"><?php echo $this->Html->link(__('List Teachers'), array('controller' => 'teachers', 'action' => 'index'), array('class' => '')); ?></li> 
 						<li class="list-group-item"><?php echo $this->Html->link(__('New Teacher'), array('controller' => 'teachers', 'action' => 'add'), array('class' => '')); ?></li> 
 					</ul>
+					</div>	
 			</ul><!-- /.list-group -->
 			
 		</div><!-- /.actions -->
@@ -52,6 +60,7 @@
 							<th><?php echo $this->Paginator->sort('local_num'); ?></th>
 							<th><?php echo $this->Paginator->sort('session'); ?></th>
 							<th><?php echo $this->Paginator->sort('maximum'); ?></th>
+							<th><?php echo $this->Paginator->sort('program_id'); ?></th>
 							<th><?php echo $this->Paginator->sort('subject_id'); ?></th>
 							<th><?php echo $this->Paginator->sort('created'); ?></th>
 							<th><?php echo $this->Paginator->sort('modified'); ?></th>
@@ -65,6 +74,9 @@
 		<td><?php echo h($group['Group']['local_num']); ?>&nbsp;</td>
 		<td><?php echo h($group['Group']['session']); ?>&nbsp;</td>
 		<td><?php echo h($group['Group']['maximum']); ?>&nbsp;</td>
+		<td>
+		<?php echo $this->Html->link($group['Subject']['program_id'], array('controller' => 'programs', 'action' => 'view', $group['Subject']['program_id']), array('class' => '')); ?>
+		</td>
 		<td>
 			<?php echo $this->Html->link($group['Subject']['title'], array('controller' => 'subjects', 'action' => 'view', $group['Subject']['id'])); ?>
 		</td>

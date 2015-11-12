@@ -13,6 +13,7 @@ class GroupsController extends AppController {
  *
  * @var array
  */
+	public $helpers = array('Js');
 	public $components = array('Paginator');
 
 /**
@@ -82,10 +83,12 @@ class GroupsController extends AppController {
 				$this->Session->setFlash(__('The group could not be saved. Please, try again.'), 'flash/error');
 			}
 		}
-		$subjects = $this->Group->Subject->find('list');
+		$programs = $this->Group->Subject->Program->find('list');
+		
+		$subjects = $this->Group->Subject->find('list', array('conditions' => array('program_id' => 1)));
 		$students = $this->Group->Student->find('list');
 		$teachers = $this->Group->Teacher->find('list');
-		$this->set(compact('subjects', 'students', 'teachers'));
+		$this->set(compact('programs','subjects', 'students', 'teachers'));
 	}
 
 /**
@@ -111,10 +114,17 @@ class GroupsController extends AppController {
 			$options = array('conditions' => array('Group.' . $this->Group->primaryKey => $id));
 			$this->request->data = $this->Group->find('first', $options);
 		}
-		$subjects = $this->Group->Subject->find('list');
+		
+		$programs = $this->Group->Subject->Program->find('list');
+		$this->request->data['Group']['program_id'] = $this->request->data['Subject']['program_id'];
+		 if (isset($this->request->data['Subject']['program_id'])) {
+            $subjects = $this->Group->Subject->find('list', array('conditions' => array('program_id' => $this->request->data['Subject']['program_id'])));
+        } else {
+            $subjects = $this->Group->Subject->find('list', array('conditions' => array('program_id' => 1)));
+        }
 		$students = $this->Group->Student->find('list');
 		$teachers = $this->Group->Teacher->find('list');
-		$this->set(compact('subjects', 'students', 'teachers'));
+		$this->set(compact('programs','subjects', 'students', 'teachers'));
 	}
 
 /**
