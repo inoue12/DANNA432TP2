@@ -23,7 +23,7 @@ class UsersController extends AppController {
 	public function beforeFilter() {
 		parent::beforeFilter();
 		// Allow users to register and logout.
-		$this->Auth->allow('login','logout','register', 'activate');
+		$this->Auth->allow('login','logout','register', 'activate', 'sendmail');
 		$this->Auth->deny('view', 'add', 'delete', 'edit', 'index');
 	}
 
@@ -119,20 +119,19 @@ class UsersController extends AppController {
 		return parent::isAuthorized($user);
 	}
 	
-	public function sendmail($recipient = null, $username = null, $id = null, $redirect = true) {
-        $link = array('controller' => 'users', 'action' => 'activate', $id);
-        App::uses('CakeEmail', 'Network/Email');
-        $mail = new CakeEmail('gmail');
-        $mail->from('test.cour.php@gmail.com')->to($recipient)->subject('Mail Confirm');
-        $mail->emailFormat('html');
-        $mail->template('signup');
-        $mail->viewVars(array('username' => $this->request->data['User']['username'],'link' => $link ));
-        $mail->send();
-        if ($redirect) {
+public function sendmail($recipient = null, $username = null, $id = null, $redirect = true) {
+				App::uses('CakeEmail', 'Network/Email');
+                $user = $this->User->read(null, $this->User->id);
+                $link = array('controller' => 'users', 'action' => 'activate',
+                        $this->User->id . '-' . md5($user['User']['password']));
+                $mail = new CakeEmail('gmail');
+				$mail->from('test.cour.php@gmail.com')->to($recipient)->subject('Mail Confirm');
+                 $mail->emailFormat('html')->template('signup')->viewVars(array('username' => $username, 'link' => $link));
+                $mail->send();
+				if ($redirect) {
             $this->redirect('/');
         }
-    }
-
+				}
 /**
  * view method
  *

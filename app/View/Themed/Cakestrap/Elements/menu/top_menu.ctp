@@ -63,7 +63,7 @@
 			 if (!$this->Session->read('Auth.User.active')) {
 				?> <li class="dropdown"> <?php echo 'Your account is not activated. You can\'t add data'
 				?></li>
-				<li><?php echo $this->Html->link(__('Resend mail'), array('controller' => 'users', 'action' => 'send_mail', $this->Session->read('Auth.User.email'), $this->Session->read('Auth.User.username'), $this->Session->read('Auth.User.id'))) ?></li>
+	<li><?= $this->Html->link(__('Resend mail'), array('controller' => 'users', 'action' => 'sendmail', $this->Session->read('Auth.User.email'), $this->Session->read('Auth.User.username'), $this->Session->read('Auth.User.id'))) ?></li>
 				<?php
 			 }
 				}
