@@ -25,16 +25,14 @@
  * to use (in this case, /app/View/Pages/home.ctp)...
  */
  	Router::parseExtensions();
-
 /**
  * ...and connect the rest of 'Pages' controller's URLs.
  */
-
-
+	Router::connect('/', array('controller' => 'subjects', 'action' => 'index'));
 	
 	App::uses('I18nRoute', 'I18n.Routing/Route');
 	Router::connect('/',
-		array('controller' => 'pages', 'action' => 'display', 'home'),
+		array('controller' => 'subjects', 'action' => 'display', 'home'),
 		array('routeClass' => 'I18nRoute')
 	);
 	Router::connect('/pages/*',

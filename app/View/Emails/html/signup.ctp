@@ -4,6 +4,6 @@
 <p><?= __('Have a good day!') ?></p>
 <p><?= __('___________________________________________________________________________________________________') ?></p>
 <p><?= __('Bonjour, ') . $username; ?></p>
-<p><?= __('Votre compte a été crée à merveille. Tout ce qui vous reste à faire est de l'activé.') ?></p>
+<p><?= __('Votre compte a été crée à merveille. Tout ce qui vous reste à faire est de l\'activé.') ?></p>
 <p><?= __('Voila le lien de confirmation : ') . $this->Html->link($this->Html->url($link, true)); ?></p>
 <p><?= __('Bonne journée!') ?></p>
