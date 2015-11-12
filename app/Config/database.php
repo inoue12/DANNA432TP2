@@ -68,7 +68,9 @@
  */
 class DATABASE_CONFIG {
 
-	/**public $default = array(
+	/**
+	old database
+	public $default = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'localhost',
