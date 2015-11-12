@@ -25,11 +25,11 @@
  * to use (in this case, /app/View/Pages/home.ctp)...
  */
  	Router::parseExtensions();
-	Router::connect('/', array('controller' => 'subjects', 'action' => 'index'));
+
 /**
  * ...and connect the rest of 'Pages' controller's URLs.
  */
-	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
+
 
 	
 	App::uses('I18nRoute', 'I18n.Routing/Route');
@@ -45,7 +45,7 @@
  * Load all plugin routes. See the CakePlugin documentation on
  * how to customize the loading of plugin routes.
  */
-	require CAKE . 'Config' . DS . 'routes.php';
+
 	CakePlugin::routes();
 
 
